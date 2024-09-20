@@ -1,0 +1,51 @@
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #C1445A;
+}
+
+h2 {
+    color: #C1445A;
+}
+
+.caption {
+    color: #C1445A;
+    font-size: 2rem;
+}
+.time-column {
+    background-color: #81D55D;
+}
+.weekday-columns {
+    background-color: #F58498;
+}
+.weekend-columns {
+    background-color: #E9667D;
+}
+table, th, td {
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    color: white;
+    width: 1000px;
+    text-align: center;
+}
+thead {
+    font-size: 1.25rem
+}
+tbody {
+    font-size: 0.9rem;
+}
+tfoot {
+    background-color: #C1445A;
+    font-size: 0.75rem;
+}
+
+.time-header {
+    background-color: #448C26;
+}
+.weekday-header {
+    background-color: #C1445A;
+}
+.weekend-header {
+    background-color: #98293D;
+}

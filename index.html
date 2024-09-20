@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>03 Assignment: Tables, Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Tables, Forms, and Image Maps</h1>
+    </header>
+    <main>
+        <h2>Image Map</h2>
+        <img src="fruitBowl.jpg" alt="A picture of a bowl of fruit." usemap="#image-map">
+
+        <map name="image-map">
+            <area shape="poly" coords="195,306,98,470,19,178,145,211,179,121,223,46,405,41,490,132,394,247" href="https://en.wikipedia.org/wiki/Grape" target="_blank" alt="Red and green grapes">
+            <area shape="poly" coords="655,190,750,199,823,255,865,237,848,159,768,78,631,14,525,112,468,170,408,240,464,279,519,322,572,231,614,203" href="https://en.wikipedia.org/wiki/Strawberry" target="_blank" alt="Strawberries">
+            <area shape="poly" coords="115,508,267,573,469,612,572,498,514,326,429,270,279,266,190,313,137,414" href="https://en.wikipedia.org/wiki/Apple" target="_blank" alt="Apples">
+            <area shape="poly" coords="525,324,552,405,574,505,552,580,567,609,686,595,845,553,926,467,946,397,892,234,828,251,726,190,641,198,577,232" href="https://en.wikipedia.org/wiki/Kiwifruit" target="_blank" alt="Kiwis">
+        </map>
+
+        <br>
+        <br>
+
+        <h2>Table</h2>
+        <table>
+            <caption class="caption">Daily Schedule</caption>
+            <colgroup>
+                <col class="time-column">
+                <col span="4" class="weekday-columns">
+                <col span="3" class="weekend-columns">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="time-header">Time</th>
+                    <th class="weekday-header">Mon</th>
+                    <th class="weekday-header">Tue</th>
+                    <th class="weekday-header">Wed</th>
+                    <th class="weekday-header">Thu</th>
+                    <th class="weekend-header">Fri</th>
+                    <th class="weekend-header">Sat</th>
+                    <th class="weekend-header">Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6:00 AM</td>
+                    <td colspan="3" rowspan="3">Wake Up, Get Ready, Drive to School</td>
+                    <td rowspan="3">Sleep</td>
+                    <td colspan="3" rowspan="3">Sleep</td>
+                </tr>
+                <tr>
+                    <td>7:00 AM</td>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td colspan="3" rowspan="3">DTC Classes</td>
+                    <td rowspan="2">Wake Up, Get Ready, Drive to School</td>
+                    <td rowspan="3">Free Time</td>
+                    <td rowspan="3">Chores</td>
+                    <td>Get Ready For Church</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td rowspan="2">Church</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td rowspan="2">CS 2350</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td colspan="3">Lunch</td>
+                    <td>Lunch</td>
+                    <td colspan="2">Free Time</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Seminary</td>
+                    <td rowspan="3">DTC Classes</td>
+                    <td>Seminary</td>
+                    <td>Lunch</td>
+                    <td rowspan="8">Work</td>
+                    <td colspan="2">Lunch</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>ENGL 2015</td>
+                    <td>ENGL 2015</td>
+                    <td rowspan="4">Homework</td>
+                    <td colspan="2" rowspan="5">Free Time</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td rowspan="3">Homework</td>
+                    <td rowspan="6">Homework</td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td rowspan="5">Homework</td>
+                </tr>
+                <tr>
+                    <td>5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>6:00 PM</td>
+                    <td rowspan="5">Work</td>
+                    <td rowspan="5">Work</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td rowspan="4">Football Game</td>
+                    <td rowspan="4">Free Time & Sleep</td>
+                </tr>
+                <tr>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>9:00 PM</td>
+                    <td colspan="2" rowspan="2">Free Time</td>
+                    <td rowspan="2">Free Time</td>
+                </tr>
+                <tr>
+                    <td>10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>11:00 PM to 5:00 AM</td>
+                    <td colspan="4">Sleep</td>
+                    <td colspan="3">Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">(All times on this schedule are approximate)</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+        <br>
+
+        <h2>Form</h2>
+        <form id="survey" method="POST">
+            <label for="experience_rating">How would you rate your experience with this website?</label>
+            <br>
+            <select id="experience_rating" name="experience_rating">
+                <option value="10">Best Thing Since Wi-Fi</option>
+                <option value="9">It's a Website Alright</option>
+                <option value="8">It Didn't Crash, So That's a Win</option>
+                <option value="7">I've Seen Fancier PowerPoints</option>
+                <option value="6">This Was an Emotional Rollercoaster</option>
+                <option value="5">I Barely Survived</option>
+                <option value="4">Take Me Back to Dial-Up</option>
+                <option value="3">My Eyes Need a Break</option>
+                <option value="2">I Feel Personally Attacked</option>
+                <option value="1">Send Help</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="current_date">Current Date:</label>
+            <br>
+            <input type="date" id="current_date" name="current_date">
+
+            <br>
+            <br>
+
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+            <br>
+            <br>
+
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_male">Male</label>
+            <br>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Female</label>
+            <br>
+            <input type="radio" id="gender_other" name="gender" value="other">
+            <label for="gender_other">Other</label>
+
+            <br>
+            <br>
+
+            <label for="additional_comments">Additional Comments:</label>
+            <br>
+            <textarea id="additional_comments" name="additional_comments" rows="5" cols="50" placeholder="Comments..."></textarea>
+
+            <br>
+            <br>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+</html>
